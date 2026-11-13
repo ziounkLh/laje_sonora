@@ -73,3 +73,56 @@ h1, h2, h3 {
 .menu a.atual {
     border-bottom-color: var(--fita);
 }
+
+.cartazes {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.cartaz {
+    padding: 40px;
+}
+
+.cartaz-principal {
+    background: var(--caixa-dagua);
+    color: var(--branco);
+    flex: 2;
+
+    h1 {
+        font-size: 132px;
+        max-width: 9ch;
+    }
+}
+
+.cartaz-lateral {
+    background: var(--fita);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: flex-start;
+
+    p {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+}
+
+.botao {
+    background: var(--tinta);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 16px 28px;
+    border: none;
+    font-family: var(--fonte-texto);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: var(--caixa-dagua);
+}
